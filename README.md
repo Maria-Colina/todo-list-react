@@ -1,16 +1,57 @@
-# React + Vite
+# ToDo List React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React para gestionar tareas pendientes de forma sencilla, moderna y responsive.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Añadir nuevas tareas.
+- Evitar tareas vacías.
+- Mostrar listado dinámico de tareas.
+- Marcar tareas como completadas.
+- Eliminar tareas.
+- Editar tareas existentes.
+- Filtrar tareas:
+  - Todas
+  - Pendientes
+  - Completadas
+- Contador de tareas pendientes.
+- Contador de tareas completadas.
+- Eliminación masiva de tareas completadas.
+- Persistencia de datos mediante localStorage.
+- Diseño responsive adaptable a dispositivos móviles.
 
-## React Compiler
+## Componentes utilizados
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La aplicación está dividida en componentes reutilizables:
 
-## Expanding the ESLint configuration
+- App
+- TodoForm
+- TodoList
+- TodoItem
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologías utilizadas
+
+- React
+- JavaScript
+- CSS
+- Vite
+- localStorage
+
+## Instalación y ejecución
+
+```bash
+npm install
+npm run dev
+```
+
+## Explicación del funcionamiento
+
+El usuario puede crear tareas desde un formulario. Cada tarea se almacena en el estado de la aplicación y se renderiza dinámicamente en pantalla.
+
+Las tareas pueden marcarse como completadas, editarse o eliminarse. Además, la aplicación incorpora filtros para visualizar distintos tipos de tareas y utiliza localStorage para conservar la información incluso al recargar la página.
+
+## Repositorio GitHub
+
+Repositorio del proyecto:
+
+https://github.com/Maria-Colina/todo-list-react
